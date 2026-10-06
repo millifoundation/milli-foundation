@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">\n  <meta name="mobile-web-app-capable" content="yes">\n  <meta name="apple-mobile-web-app-capable" content="yes">\n  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">\n  <link rel="manifest" href="manifest.json">
+  <title>Milli Foundation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+  <a class="brand" href="#home">
+    <div class="logo">M</div>
+    <div>
+      <strong>Milli Foundation</strong>
+      <span>Helping • Caring • Serving</span>
+    </div>
+  </a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#impact" onclick="closeMenu()">Impact</a>
+    <a href="#donate" onclick="closeMenu()">Donate</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </nav>
+</header>
+
+  <main>
+    <section id="home" class="hero">
+  <div class="hero-glow glow-one"></div>
+  <div class="hero-glow glow-two"></div>
+  <div class="hero-content">
+    <div class="badge">✦ A little kindness can change a life</div>
+    <h1>Be the reason<br><span>someone smiles.</span></h1>
+    <p>Milli Foundation connects compassion with meaningful action — supporting people, families and communities with dignity and hope.</p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="#donate">❤️ Donate Now</a>
+      <a class="btn secondary" href="#about">Discover Our Mission</a>
+    </div>
+    <div class="trust-row">
+      <div><strong>100%</strong><span>Community Focus</span></div>
+      <div><strong>❤️</strong><span>Made for Humanity</span></div>
+      <div><strong>₹</strong><span>Every Contribution Counts</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="stats-card">
+    <div><strong>01</strong><span>Purpose</span><p>Serve with compassion</p></div>
+    <div><strong>02</strong><span>Mission</span><p>Support people in need</p></div>
+    <div><strong>03</strong><span>Vision</span><p>Build stronger communities</p></div>
+  </div>
+</section>
+
+    <section id="about" class="section">
+  <div class="section-title">
+    <span>OUR STORY</span>
+    <h2>Built on compassion.</h2>
+  </div>
+  <div class="about-premium">
+    <div>
+      <div class="mini-label">MILLI FOUNDATION</div>
+      <h3>Kindness becomes powerful when we act on it.</h3>
+    </div>
+    <p>Milli Foundation aims to support people and communities through kindness, donations and meaningful service. We believe every contribution can become a step toward hope, dignity and a better tomorrow.</p>
+  </div>
+</section>
+
+    <section id="work" class="section">
+      <div class="section-title">
+        <span>OUR MISSION</span>
+        <h2>What We Support</h2>
+      </div>
+      <div class="grid">
+        <div class="card work-card"><div class="icon">📚</div><h3>Education</h3><p>Supporting learning and educational opportunities.</p></div>
+        <div class="card work-card"><div class="icon">🍱</div><h3>Food Support</h3><p>Helping provide food and essential support to people in need.</p></div>
+        <div class="card work-card"><div class="icon">🤝</div><h3>Community Help</h3><p>Standing with families and individuals during difficult times.</p></div>
+        <div class="card work-card"><div class="icon">❤️</div><h3>Humanity</h3><p>Promoting compassion, dignity and care for everyone.</p></div>
+      </div>
+    </section>
+
+
+    <section id="impact" class="section">
+  <div class="section-title">
+    <span>OUR IMPACT</span>
+    <h2>Where your kindness goes.</h2>
+  </div>
+  <div class="grid premium-grid">
+    <div class="card work-card"><div class="icon">📚</div><h3>Education</h3><p>Helping create learning opportunities for people who need support.</p><div class="line"></div></div>
+    <div class="card work-card"><div class="icon">🍱</div><h3>Food Support</h3><p>Supporting essential food needs with care and dignity.</p><div class="line"></div></div>
+    <div class="card work-card"><div class="icon">🤝</div><h3>Community</h3><p>Standing together with families and individuals in difficult times.</p><div class="line"></div></div>
+    <div class="card work-card"><div class="icon">❤️</div><h3>Humanity</h3><p>Turning compassion into positive action for a stronger community.</p><div class="line"></div></div>
+  </div>
+</section>
+
+    <section id="donate" class="section donate-section">
+  <div class="section-title">
+    <span>MAKE A DIFFERENCE</span>
+    <h2>Make your kindness count.</h2>
+  </div>
+
+  <div class="donate-card">
+    <div class="qr-column">
+      <div class="qr-label">SCAN TO DONATE</div>
+      <div class="qr-wrap">
+        <img src="qr.jpg" alt="Milli Foundation UPI donation QR code">
+      </div>
+      <div class="qr-secure">🔒 Secure UPI payment</div>
+    </div>
+
+    <div class="donate-info">
+      <div class="mini-label">MILLI FOUNDATION</div>
+      <h3>Support the mission.</h3>
+      <p>Your contribution can help turn compassion into real-world support.</p>
+
+      <div class="upi-box">
+        <small>UPI ID</small>
+        <strong id="upi">9632898870@kotakbank</strong>
+        <button onclick="copyUPI()">Copy UPI ID</button>
+      </div>
+
+      <a class="btn primary full" href="upi://pay?pa=9632898870@kotakbank&pn=Milli%20Foundation&cu=INR">
+        💳 Open UPI App
+      </a>
+      <p class="note">Scan the QR code with Google Pay, PhonePe, Paytm or another UPI app.</p>
+    </div>
+  </div>
+</section>
+
+    <section id="contact" class="section">
+      <div class="section-title">
+        <span>GET IN TOUCH</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-card">
+        <p>For donation or foundation-related enquiries, please contact the foundation directly.</p>
+        <div class="contact-item">📱 <span>UPI: 9632898870@kotakbank</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-nav">
+      <a href="#home">⌂<span>Home</span></a>
+      <a href="#about">♡<span>About</span></a>
+      <a class="mobile-donate" href="#donate">♥<span>Donate</span></a>
+      <a href="#impact">✦<span>Impact</span></a>
+      <a href="#contact">⌕<span>Contact</span></a>
+    </div>
+
+  <footer>
+    <div class="footer-logo">Milli Foundation</div>
+    <p>Made with ❤️ for humanity</p>
+    <small>© <span id="year"></span> Milli Foundation. All rights reserved.</small>
+  </footer>
+
+  <div id="toast" class="toast">UPI ID copied!</div>
+  <script src="script.js"></script>\n  <script>if ("serviceWorker" in navigator) { window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js")); }</script>
+</body>
+</html>

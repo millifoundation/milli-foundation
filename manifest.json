@@ -1,0 +1,19 @@
+{
+  "name": "Milli Foundation",
+  "short_name": "Milli Foundation",
+  "description": "Milli Foundation \u2014 Helping, Caring, Serving.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "foundation-bg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
